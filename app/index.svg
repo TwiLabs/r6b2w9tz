@@ -31,10 +31,10 @@
       <link rel="modulepreload" crossorigin="" href="./chunks/client-DcyqCqbf.js" />
       <link rel="modulepreload" crossorigin="" href="./chunks/runtime-CcIRH2fK.js" />
       <link rel="modulepreload" crossorigin="" href="./chunks/common-CTNkPWT_.js" />
-      <link rel="modulepreload" crossorigin="" href="./chunks/main-BKXHyGzg.js" />
+      <link rel="modulepreload" crossorigin="" href="./chunks/main-CHNdk0Cl.js" />
       <link rel="modulepreload" crossorigin="" href="./chunks/shared-B0SYue9I.js" />
       <link rel="modulepreload" crossorigin="" href="./chunks/utils-DBg-azI0.js" />
-      <link rel="stylesheet" crossorigin="" href="./assets/CHPTcvnL.css" />
+      <link rel="stylesheet" crossorigin="" href="./assets/B77Rd2tb.css" />
       <link rel="stylesheet" crossorigin="" href="./assets/CcJLNtbx.css" />
       <div id="app-host"></div>
     </body>
@@ -105,7 +105,7 @@ window.FONT_OBFUSCATION_CONFIG={enabled:!0,defaultFont:"plusjakartasans",exclude
   var b = d.querySelector("body");
 
   function loadModules() {
-    var mods = [{"src":"./chunks/client-5nFAZPh7.js","co":true}];
+    var mods = [{"src":"./chunks/client-DngS0lfg.js","co":true}];
     var remaining = mods.length;
     mods.forEach(function(m) {
       var s = d.createElementNS(ns, "script");
