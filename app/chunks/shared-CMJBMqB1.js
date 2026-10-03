@@ -1,0 +1,1 @@
+import{t as r}from"./shared-D7vjW_kp.js";export{r as SettingsAPI};

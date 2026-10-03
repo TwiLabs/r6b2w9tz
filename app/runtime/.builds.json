@@ -1,0 +1,11 @@
+[
+  {
+    "buildId": "npowz5s6ut6tyhxtfczvz",
+    "worker": "sw.js",
+    "controllerGlobal": "_bvvc40tiv6c7g",
+    "provider": "cloudflare",
+    "workerAbiVersion": 5,
+    "handoffVersion": 2,
+    "registeredAt": 1791041522648
+  }
+]
