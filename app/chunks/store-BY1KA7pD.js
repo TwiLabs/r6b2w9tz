@@ -1,1 +1,0 @@
-function n(n){const a=e(n.rawInput,n.searchEngines);if(!a)return{};const{engine:o,query:t}=a;return{primaryRow:{id:`bang-${o.id}`,icon:"zap",label:`Search ${o.name} for: ${t||""}`,sublabel:`!${o.bang}`,onSelect(){return n.onNavigate(r(o.urlTemplate,t))}}}}import{a as e,r}from"./common-XuVnyL5A.js";export{n as renderBangMode};

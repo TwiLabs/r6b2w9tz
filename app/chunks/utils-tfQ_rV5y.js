@@ -1,1 +1,0 @@
-function r(r){return n+r.replace(/^\//,"")}import{n as e}from"./client-dLY0slnB.js";var a,t=e({basePath(){return n},resolvePath(){return r}}),n=(null===(a=self._hqahkzpvl4)||void 0===a?void 0:a.value)||"/";export{t as n,r,n as t};

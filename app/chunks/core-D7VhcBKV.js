@@ -1,0 +1,1 @@
+function e(e){const a=n(e.rawInput,e.searchEngines);if(!a)return{};const{engine:o,query:t}=a;return{primaryRow:{id:`bang-${o.id}`,icon:"zap",label:`Search ${o.name} for: ${t||""}`,sublabel:`!${o.bang}`,onSelect(){return e.onNavigate(r(o.urlTemplate,t))}}}}import{a as n,r}from"./polyfills-BW39hlyR.js";export{e as renderBangMode};

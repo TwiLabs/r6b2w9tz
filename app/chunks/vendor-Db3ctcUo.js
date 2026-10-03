@@ -1,0 +1,1 @@
+import{t as o}from"./vendor-CmujnqbB.js";export{o as SettingsAPI};

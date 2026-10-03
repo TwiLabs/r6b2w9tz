@@ -1,0 +1,1 @@
+import{n as r,r as s,t}from"./runtime-CcIRH2fK.js";export{r as NYX_ORIGINS_DEFAULT};

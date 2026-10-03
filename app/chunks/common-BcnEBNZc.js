@@ -1,1 +1,0 @@
-import{o,s as r}from"./vendor-kSGv7C2J.js";export{r as getProfileBroadcast};

@@ -156,7 +156,7 @@ var SpaceProxyContext = (function(exports) {
 		};
 	}
 	//#endregion
-	//#region src/bridge/spYmVLDd-adapter.ts
+	//#region src/bridge/CENCtSmD-adapter.ts
 	var STATE = Symbol.for("proxy-context-v1.document");
 	var MAX_SVG_BYTES = 256 * 1024;
 	var BODY_HEADERS = [
@@ -292,8 +292,8 @@ var SpaceProxyContext = (function(exports) {
 		if (!host || typeof host.createFrame !== "function" || !Array.isArray(host.frames)) throw new Error("Proxy context requires Scramjet controller frame APIs");
 		const existing = installations.get(host);
 		if (existing) return existing;
-		const engine = globalThis.$spYmVLDd;
-		if (!engine?.Tap?.tap || typeof engine.rewriteHtml !== "function" || !engine.spYmVLDdCLIENT) throw new Error("Proxy context requires the active Scramjet hooks and HTML rewriter");
+		const engine = globalThis.$CENCtSmD;
+		if (!engine?.Tap?.tap || typeof engine.rewriteHtml !== "function" || !engine.CENCtSmDCLIENT) throw new Error("Proxy context requires the active Scramjet hooks and HTML rewriter");
 		if (!adapterSource.trim()) throw new Error("Proxy context adapter bundle is missing");
 		const token = crypto.randomUUID();
 		const bytes = new TextEncoder().encode(`${adapterSource}\n;globalThis.SpaceProxyContext.installDocument(${JSON.stringify(token)});`);
@@ -334,7 +334,7 @@ var SpaceProxyContext = (function(exports) {
 				if (state?.token === token && state.document === win.document) ownedStates.add(state);
 			});
 			engine.Tap.tap(frame.hooks.init.post, ({ window: win, client }) => {
-				if (!active || !prepared.has(client) || client?.global?.window !== win || win[engine.spYmVLDdCLIENT] !== client) return;
+				if (!active || !prepared.has(client) || client?.global?.window !== win || win[engine.CENCtSmDCLIENT] !== client) return;
 				const state = win[STATE];
 				if (!state || state.token !== token || state.document !== win.document) return;
 				const previous = documents.get(win);
@@ -354,7 +354,7 @@ var SpaceProxyContext = (function(exports) {
 				documents.set(win, record);
 				state.activate();
 				const show = (event) => {
-					if (event.persisted && active && documents.get(win) === record && !state.disposed && win[STATE] === state && state.document === win.document && win[engine.spYmVLDdCLIENT] === client) state.ready = true;
+					if (event.persisted && active && documents.get(win) === record && !state.disposed && win[STATE] === state && state.document === win.document && win[engine.CENCtSmDCLIENT] === client) state.ready = true;
 				};
 				const hide = (event) => {
 					if (!event.persisted) record.removeListeners();

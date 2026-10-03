@@ -1,1 +1,0 @@
-import{a,i as o,n as s,o as m,r,t}from"./common-XuVnyL5A.js";export{t as BUILTIN_SEARCH_ENGINES,s as SearchEngineRegistry,r as expandSearchTemplate,o as parseAtPrefix,a as parseBang,m as searchImpl};

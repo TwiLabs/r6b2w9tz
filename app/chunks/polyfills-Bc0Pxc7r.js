@@ -1,0 +1,1 @@
+import{a as s,i as a,n as o,o as r,r as i,t as l}from"./polyfills-BW39hlyR.js";export{l as BUILTIN_SEARCH_ENGINES,o as SearchEngineRegistry,i as expandSearchTemplate,a as parseAtPrefix,s as parseBang,r as searchImpl};
