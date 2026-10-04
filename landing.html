@@ -20,7 +20,23 @@
       // Fall back on static hosts; never proxy collection requests.
       tag.onerror = function () {
         tag.onerror = null;
-        tag.src = 'https://www.googletagmanager.com/gtag/js?id=G-BMERY7ZH6Z';
+        var direct = document.createElement('script');
+        direct.async = true;
+        direct.src = 'https://www.googletagmanager.com/gtag/js?id=G-BMERY7ZH6Z';
+        direct.onerror = function () {
+          fetch(new URL('tag-fallback.js', location.href).toString())
+            .then(function (response) {
+              if (!response.ok) throw new Error('fallback unavailable');
+              return response.text();
+            })
+            .then(function (code) {
+              var inline = document.createElement('script');
+              inline.textContent = code;
+              document.head.appendChild(inline);
+            })
+            .catch(function () {});
+        };
+        document.head.appendChild(direct);
       };
       document.head.appendChild(tag);
     })();
