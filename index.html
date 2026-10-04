@@ -16,7 +16,8 @@
     (function () {
       var tag = document.createElement('script');
       tag.async = true;
-      tag.src = '/api/tag.js';
+      // Package-relative so static subpath mounts stay in-package.
+      tag.src = new URL('api/tag.js', document.baseURI || location.href).toString();
       // Fall back on static hosts; never proxy collection requests.
       tag.onerror = function () {
         tag.onerror = null;
