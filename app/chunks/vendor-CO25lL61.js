@@ -1,0 +1,1 @@
+function t(t){if(!t)return!1;try{const n=new URL(t);return"http:"===n.protocol||"https:"===n.protocol}catch{return!1}}function n(n){const r=n.trim();if(!r)return null;const o=r.startsWith("//")?`https:${r}`:/^[a-z][a-z0-9+\-.]*:/i.test(r)?r:`https://${r}`;return t(o)?o:null}export{n,t};

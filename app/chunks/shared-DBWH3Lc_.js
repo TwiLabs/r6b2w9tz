@@ -1,0 +1,1 @@
+function r(r){return l+r.replace(/^\//,"")}import{n as e}from"./polyfills-BWNMUOIE.js";var a,s=e({basePath(){return l},resolvePath(){return r}}),l=(null===(a=self._bezgr1jsp4cc)||void 0===a?void 0:a.value)||"/";export{s as n,r,l as t};

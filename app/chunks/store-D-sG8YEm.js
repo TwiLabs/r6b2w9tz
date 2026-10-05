@@ -1,0 +1,1 @@
+function e(e){const a=n(e.rawInput,e.searchEngines);if(!a)return{};const{engine:t,query:o}=a;return{primaryRow:{id:`bang-${t.id}`,icon:"zap",label:`Search ${t.name} for: ${o||""}`,sublabel:`!${t.bang}`,onSelect(){return e.onNavigate(r(t.urlTemplate,o))}}}}import{a as n,r}from"./client-BhLdnU3n.js";export{e as renderBangMode};

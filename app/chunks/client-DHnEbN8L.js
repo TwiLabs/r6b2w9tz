@@ -1,0 +1,1 @@
+import{a,i as s,n as o,o as r,r as t,t as i}from"./client-BhLdnU3n.js";export{i as BUILTIN_SEARCH_ENGINES,o as SearchEngineRegistry,t as expandSearchTemplate,s as parseAtPrefix,a as parseBang,r as searchImpl};

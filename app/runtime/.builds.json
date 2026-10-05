@@ -1,11 +1,11 @@
 [
   {
-    "buildId": "myz2fqej32lew77d6tbijj",
-    "worker": "service-worker.js",
-    "controllerGlobal": "_kmyrq9u4zx5",
-    "provider": "azure",
+    "buildId": "33cmdue65hwvrnh6dza5yg",
+    "worker": "sw.js",
+    "controllerGlobal": "_d1dqyoqmou4dwvk80",
+    "provider": "cloudflare",
     "workerAbiVersion": 5,
     "handoffVersion": 2,
-    "registeredAt": 1791157581876
+    "registeredAt": 1791161908850
   }
 ]
